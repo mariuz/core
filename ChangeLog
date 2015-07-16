@@ -1,3 +1,31 @@
+ 2015-07-15 15:16  alexpeshkoff 
+   M src/jrd/jrd.cpp
+Postfix for CORE-4811: fix handling case for OS names
+
+ 2015-07-15 14:14  hvlad 
+   M src/utilities/fbsvcmgr/fbsvcmgr.cpp
+Fixed bug CORE-4876
+fbsvcmgr shows wrong options for some Trace API services in help screen
+
+ 2015-07-15 12:07  dimitr 
+   M src/remote/client/BlrFromMessage.cpp
+   M src/remote/client/BlrFromMessage.h
+   M src/remote/client/interface.cpp
+This should fix CORE-4872: v3 fbclient cannot work with servers older than v2.5 via the remote protocol.
+
+ 2015-07-15 11:10  hvlad 
+   M src/jrd/dpm.epp
+Correction
+
+ 2015-07-15 10:55  hvlad 
+   M src/utilities/gsec/main/gsecMain.cpp
+gsec also could hung on exit if worker database have non-zero LINGER set.
+Seems we must add fb_shutdown to the every utility which could load embedded engine...
+
+ 2015-07-15 10:42  hvlad 
+   M src/remote/server/os/win32/srvr_w32.cpp
+Windows-specific part for CORE-4871
+
  2015-07-14 17:10  dimitr 
    M src/jrd/RecordSourceNodes.cpp
 Fixed CORE-4710: invalid request BLR at offset 361 context already in use (BLR error).
